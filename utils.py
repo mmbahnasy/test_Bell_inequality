@@ -2,9 +2,6 @@ def withinRotatingRange(angle, a, b, PI=180):
     angle = (angle+2*PI) % (2*PI)
     a = (a+2*PI) % (2*PI)
     b = (b+2*PI) % (2*PI)
-    assert((angle >= 0) and (angle <= 2*PI))
-    assert((a >= 0) and (a <= 2*PI))
-    assert((b >= 0) and (b <= 2*PI))
     if a < b:
         if (angle > a) and (angle <= b):
             return True
